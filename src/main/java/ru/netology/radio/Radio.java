@@ -86,6 +86,5 @@ public class Radio {
         } else {
             currentStation = maxStation;
         }
-
     }
 }
