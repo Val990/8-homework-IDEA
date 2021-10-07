@@ -49,7 +49,6 @@ public class Radio {
     }
 
     // 1) настройка текущей станции
-
     public int getCurrentStation() { // покажи текущую станцию
         return currentStation;
     }
