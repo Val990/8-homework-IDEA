@@ -27,7 +27,7 @@ public class Radio {
         this.currentVolume = currentVolume;
     }
 
-    public int getMaxVolume() { //пределы
+    public int getMaxVolume() {
         return maxVolume;
     }
 
@@ -49,7 +49,6 @@ public class Radio {
     }
 
     // 1) настройка текущей станции
-
     public int getCurrentStation() { // покажи текущую станцию
         return currentStation;
     }
@@ -64,7 +63,7 @@ public class Radio {
         this.currentStation = currentStation;
     }
 
-    public int getMaxStation() { //пределы
+    public int getMaxStation() {
         return maxStation;
     }
 
@@ -87,8 +86,5 @@ public class Radio {
         } else {
             currentStation = maxStation;
         }
-
     }
 }
-
-
