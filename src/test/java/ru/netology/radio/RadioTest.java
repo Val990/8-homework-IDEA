@@ -149,6 +149,32 @@ class RadioTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void shouldMoreMaxVolume() {
+
+        radio.setCurrentVolume(11);
+
+        radio.getCurrentVolume();
+
+        int actual = radio.getCurrentVolume();
+        int expected = 0;
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldLessMinVolume() {
+
+        radio.setCurrentVolume(-1);
+
+        radio.getCurrentVolume();
+
+        int actual = radio.getCurrentVolume();
+        int expected = 0;
+
+        assertEquals(expected, actual);
+    }
+
     // станция
     @Test
     public void shouldMaxStation() {
@@ -285,6 +311,33 @@ class RadioTest {
         radio.increaseStation();
         radio.increaseStation();
         radio.increaseStation();
+
+        int actual = radio.getCurrentStation();
+        int expected = 0;
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldMoreMaxStation() {
+
+        radio.setCurrentStation(10);
+
+        radio.getCurrentStation();
+
+        int actual = radio.getCurrentStation();
+        int expected = 0;
+
+        assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void shouldLessMinStation() {
+
+        radio.setCurrentStation(-1);
+
+        radio.getCurrentStation();
 
         int actual = radio.getCurrentStation();
         int expected = 0;
